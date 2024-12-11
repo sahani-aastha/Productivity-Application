@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aastha Sahani - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar for Menu -->
+
+
+<!-- Navigation Bar -->
+<nav>
+    <div id="home">
+        <div class="profile_name">
+            Productivity
+            <div class="contact_info">
+            </div>
+            <div style="clear:both;"></div>
+            <div class="contact_info">
+                Where your goals meet the tools to achieve them.
+            </div>
+
+        </div>
+        <div class="topdiv">
+            <a class="topmenu" href="#about-me">Add a task</a>
+
+        </div>
+    </div>
+</nav>
+<nav class="menu-bar">
+    <ul class="menu-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#your-lists">Your Lists</a></li>
+        <li><a href="#calendar">Calendar</a></li>
+        <li><a href="#notes">Notes</a></li>
+    </ul>
+</nav>
+<!-- About Me -->
+<section id="about-me" class="container">
+    <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+    </div>
+
+    <div>
+        <h1>
+            Ready to supercharge your productivity? You've just landed in the perfect spot!<img src="html_finalprojimages/waving-hand.png" width="60px"/>
+        </h1>
+        <p>
+            Take control of your day with ease! Manage tasks, create to-do lists, jot down notes, stay focused with a Pomodoro timer, and explore many more productivity-boosting tools—all in one place. Streamline your workflow and achieve your goals faster than ever. Whether you're planning, organizing, or staying on track, we've got you covered!
+        </p>
+        <a href="https://www.geeksforgeeks.org/html-tutorial/" class="getstart">
+            <button>Get Started!</button>
+        </a>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Pomodoro Timers</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_skills">
+        <div class="skill">
+            <img class="pom25" src="Screenshot 2024-11-21 155755.jpg"/>
+            <h6>25-5 Pomodoro</h6>
+            <p>Boost Your Focus with Short Breaks</p>
+        </div>
+
+        <div class="skill">
+            <img src="Screenshot 2024-11-21 160425.png"/>
+            <h6>50-10 Pomodoro</h6>
+            <p>    Maximize Productivity with Longer Work Sessions
+
+            </p>
+        </div>
+
+        <!-- Add more skills here -->
+
+
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <h2>
+        Capture tasks at the speed of thought
+    </h2>
+    <div style="clear:both;"></div>
+
+    <div id="projects-container" class="projects-container">
+        <div class="project-card">
+            <h3>Clear your mind</h3>
+            <ul>
+                <li>Designed to feel like an extension of your mind, our tools make task management effortless. Quickly capture and organize your tasks with smooth, natural language input.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+            <h3>Focus on what’s important</h3>
+            <ul>
+                <li>Achieve mental clarity by sorting tasks into Today, Upcoming, or using custom filters. See only what you need, when you need it.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+            <h3>Plan with confidence</h3>
+            <ul>
+                <li>Simplify your planning. Make the most of your time. Schedule due dates, visualize your week in calendar view, and set recurring tasks with ease.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+<!-- Recommendations -->
+<section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            This website has completely transformed how I manage my day! The Pomodoro timer keeps me focused, and the to-do list feature is a game-changer. It’s become an essential part of my daily routine. I’ve never felt more organized and in control of my time.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            A one-stop productivity hub! I love how easy it is to create and organize tasks while staying on track with reminders. It’s perfect for balancing my work and personal life. The Pomodoro sessions have made me more efficient than ever.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            The intuitive design and tools like notes and timers have made staying productive so much simpler. It’s like having a personal assistant right on my screen! I recommend this to anyone looking to stay productive effortlessly.
+            <span>&#8221;</span>
+        </div>
+    </div>
+</section>
+
+<!-- Recommendation Form -->
+<section id="contact">
+    <div class="flex_center">
+        <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+        </fieldset>
+    </div>
+</section>
+
+<div class="iconbutton">
+    <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+    </a>
+</div>
+
+<div class="popup" id="popup" class="flex_center">
+    <img src="html_finalprojimages/checkmark--outline.svg"/>
+    <h3><!-- Add appropriate text here--></h3>
+    <button onclick="showPopup(false)">Ok</button>
+</div>
+</body>
+</html>
